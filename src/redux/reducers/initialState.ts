@@ -25,15 +25,15 @@ export interface AppState {
 }
  
 export const initialState: AppState = {
-    orderState: {
-        orders: [],
-        gettingOrdersStatus: ApiStatus.NONE,
-        postingOrderStatus: ApiStatus.NONE,
-        postingOrderErrorMessage: ""
-    },
-    paymentState: {
-        payingOrderStatus: ApiStatus.NONE,
-        payingOrderErrorMessage: ""
-    }
+	orderState: {
+		orders: [],
+		gettingOrdersStatus: ApiStatus.NONE,
+		postingOrderStatus: ApiStatus.NONE,
+		postingOrderErrorMessage: ''
+	},
+	paymentState: {
+		payingOrderStatus: ApiStatus.NONE,
+		payingOrderErrorMessage: ''
+	}
 };
   

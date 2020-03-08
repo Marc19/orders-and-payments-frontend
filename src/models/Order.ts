@@ -1,5 +1,5 @@
-import OrderDetail from "./OrderDetail";
-import Payment from "./Payment";
+import OrderDetail from './OrderDetail';
+import Payment from './Payment';
 
 export default interface Order {
     id?: number;
