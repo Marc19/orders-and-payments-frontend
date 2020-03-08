@@ -1,9 +1,10 @@
+import { Container, createStyles,makeStyles, Theme } from '@material-ui/core';
 import React from 'react';
-import {ActiveTab} from '../../models/ActiveTab';
-import NavBar from '../NavBar/NavBar';
-import { Container, makeStyles, Theme, createStyles } from '@material-ui/core';
 import { useDispatch } from 'react-redux';
+
+import {ActiveTab} from '../../models/ActiveTab';
 import { resetApiCallsStatusesActionCreator } from '../../redux/actions/order/orderActions';
+import NavBar from '../NavBar/NavBar';
 
 const useStyles = makeStyles((theme: Theme) =>
 	createStyles({

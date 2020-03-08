@@ -1,8 +1,9 @@
 import { ActionCreator, Dispatch } from 'redux';
 import { ThunkAction } from 'redux-thunk';
-import Payment from '../../../models/Payment';
-import { PostedPaymentSucceededAction, PostedPaymentFailedAction, PostingPaymentAction, ResetPaymentApiStatus } from './paymentActionTypes';
+
 import { postPayment } from '../../../api/paymentApi';
+import Payment from '../../../models/Payment';
+import { PostedPaymentFailedAction, PostedPaymentSucceededAction, PostingPaymentAction, ResetPaymentApiStatus } from './paymentActionTypes';
 
 export const postPaymentActionCreator: 
 	ActionCreator<ThunkAction<

@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import { List, makeStyles, Theme, createStyles, useTheme } from '@material-ui/core';
+import { createStyles, List, makeStyles, Theme, useTheme } from '@material-ui/core';
 import Divider from '@material-ui/core/Divider';
+import React, { useState } from 'react';
 
 import OrderDetail from '../../models/OrderDetail';
-import {OrderItem} from '../OrderItem/OrderItem';
 import { CreateOrEditOrderItem } from '../CreateOrEditOrderItem/CreateOrEditOrderItem';
+import {OrderItem} from '../OrderItem/OrderItem';
 
 interface Props {
     orderDetails: OrderDetail[];

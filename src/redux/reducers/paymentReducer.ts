@@ -1,6 +1,7 @@
 import { Reducer } from 'redux';
-import {initialState, PaymentState, ApiStatus} from './initialState';
+
 import { PaymentActions } from '../actions/payment/paymentActionTypes';
+import {ApiStatus,initialState, PaymentState} from './initialState';
 
 export const paymentReducer: Reducer<PaymentState, PaymentActions> = 
 	(state = initialState.paymentState, action) => {

@@ -1,9 +1,10 @@
+import moment from 'moment';
 import { ActionCreator, Dispatch } from 'redux';
 import { ThunkAction } from 'redux-thunk';
-import moment from 'moment';
-import { GettingOrdersAction, GotOrdersSucceededAction, GotOrdersFailedAction, PostedOrderSucceededAction, PostedOrderFailedAction, PostingOrderAction, ResetApiCallsStatuses, GotOrderByIdFailedAction, GotOrderByIdSucceededAction, GettingOrderByIdAction, DeletedOrderSucceededAction, DeletedOrderFailedAction, DeletingOrderAction } from './orderActionTypes';
+
+import {deleteOrder,getOrderById, getOrders, postOrder} from '../../../api/orderApi';
 import Order from '../../../models/Order';
-import {getOrders, postOrder, getOrderById, deleteOrder} from '../../../api/orderApi';
+import { DeletedOrderFailedAction, DeletedOrderSucceededAction, DeletingOrderAction,GettingOrderByIdAction, GettingOrdersAction, GotOrderByIdFailedAction, GotOrderByIdSucceededAction, GotOrdersFailedAction, GotOrdersSucceededAction, PostedOrderFailedAction, PostedOrderSucceededAction, PostingOrderAction, ResetApiCallsStatuses } from './orderActionTypes';
 
 export const getOrdersActionCreator: 
 	ActionCreator<ThunkAction<

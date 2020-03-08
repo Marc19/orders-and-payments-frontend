@@ -1,7 +1,7 @@
-import {OrderActions, GotOrdersSucceededAction} from '../actions/order/orderActionTypes';
-
-import {initialState, OrderState, ApiStatus} from './initialState';
 import { Reducer } from 'redux';
+
+import {GotOrdersSucceededAction,OrderActions} from '../actions/order/orderActionTypes';
+import {ApiStatus,initialState, OrderState} from './initialState';
 
 export const orderReducer: Reducer<OrderState, OrderActions> = 
 	(state = initialState.orderState, action) => {

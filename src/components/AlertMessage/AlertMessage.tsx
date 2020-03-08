@@ -1,6 +1,6 @@
-import React from 'react';
-import MuiAlert, { Color } from '@material-ui/lab/Alert';
 import Snackbar from '@material-ui/core/Snackbar';
+import MuiAlert, { Color } from '@material-ui/lab/Alert';
+import React from 'react';
 
 interface Props {
     isOpen: boolean;

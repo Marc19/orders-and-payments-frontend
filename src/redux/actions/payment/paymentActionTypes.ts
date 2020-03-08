@@ -1,4 +1,5 @@
 import { Action } from 'redux';
+
 import Payment from '../../../models/Payment';
 
 export interface PostingPaymentAction extends Action<'POSTING_PAYMENT'> {

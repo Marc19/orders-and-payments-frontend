@@ -1,6 +1,7 @@
 import axios, { AxiosResponse } from 'axios';
-import { BASE_URL } from './config';
+
 import Order from '../models/Order';
+import { BASE_URL } from './config';
 
 export const getOrders = (): Promise<AxiosResponse<Order[]>> => {
 	return axios.get(BASE_URL + '/orders');

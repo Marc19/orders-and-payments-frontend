@@ -1,8 +1,8 @@
-import React from 'react';
-import { ListItem, ListItemAvatar, Avatar, ListItemText, ListItemSecondaryAction, IconButton } from '@material-ui/core';
-import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
+import { Avatar, IconButton,ListItem, ListItemAvatar, ListItemSecondaryAction, ListItemText } from '@material-ui/core';
 import DeleteIcon from '@material-ui/icons/Delete';
 import EditIcon from '@material-ui/icons/Edit';
+import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
+import React from 'react';
 
 import OrderDetail from '../../models/OrderDetail';
 

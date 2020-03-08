@@ -1,15 +1,14 @@
+import { createMuiTheme, ThemeProvider } from '@material-ui/core';
 import React from 'react';
-import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import { Provider } from 'react-redux';
+import { BrowserRouter, Redirect,Route, Switch } from 'react-router-dom';
 
-import {store} from './redux/configureStore';
+import CreateOrderPage from './components/CreateOrderPage/CreateOrderPage';
 import MainLayout from './components/MainLayout/MainLayout';
 import NotFound from './components/NotFound/NotFound';
-import CreateOrderPage from './components/CreateOrderPage/CreateOrderPage';
 import OrdersListPage from './components/OrderListPage/OrderListPage';
-
 import { ActiveTab } from './models/ActiveTab';
-import { createMuiTheme, ThemeProvider } from '@material-ui/core';
+import {store} from './redux/configureStore';
 
 
 const theme = createMuiTheme({

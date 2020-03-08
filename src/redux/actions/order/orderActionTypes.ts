@@ -1,5 +1,6 @@
-import Order from '../../../models/Order';
 import { Action } from 'redux';
+
+import Order from '../../../models/Order';
 
 //Get Orders
 export interface GettingOrdersAction extends Action<'GETTING_ORDERS'> {
