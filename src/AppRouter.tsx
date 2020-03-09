@@ -42,18 +42,21 @@ function AppRouter() {
 								/>
 
 								<Route path="/CreateOrder"
-									render={() => <MainLayout activeTab={ActiveTab.CreateOrder}>
-										<CreateOrderPage/>
-									</MainLayout>}/>
+									render={() => 
+										<MainLayout activeTab={ActiveTab.CreateOrder}>
+											<CreateOrderPage/>
+										</MainLayout>}/>
 
 								<Route path="/ListOrders"
-									render={() => <MainLayout activeTab={ActiveTab.ListOrders}>
-										<OrdersListPage/>
-									</MainLayout>}/>
+									render={() => 
+										<MainLayout activeTab={ActiveTab.ListOrders}>
+											<OrdersListPage/>
+										</MainLayout>}/>
 
-								<Route render={() => <MainLayout activeTab={ActiveTab.None}>
-									<NotFound/>
-								</MainLayout>}/>                                                     
+								<Route render={() => 
+									<MainLayout activeTab={ActiveTab.None}>
+										<NotFound/>
+									</MainLayout>}/>                                                     
 							</Switch>
 						}
 					</React.Fragment>
